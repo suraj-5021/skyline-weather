@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-all duration-700 ease-in-out select-none;
+  }
+}
+
+/* Glassmorphism Design System */
+.bg-glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.04);
+}
+
+.dark .bg-glass {
+  background: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphism Card (Darker backdrop for better text contrast) */
+.bg-glass-card {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.03);
+}
+
+.dark .bg-glass-card {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphism Active/Hover States */
+.bg-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.dark .bg-glass-hover:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Particle Effects Overlays */
+.rain-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='140' viewBox='0 0 15 140'%3E%3Crect x='7' y='10' width='1.5' height='30' rx='0.75' fill='%23ffffff' fill-opacity='0.16'/%3E%3C/svg%3E");
+  animation: rain 0.8s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 50px 500px;
+  }
+}
+
+.snow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Ccircle cx='8' cy='8' r='1.5' fill='%23ffffff' fill-opacity='0.35'/%3E%3Ccircle cx='22' cy='22' r='1.0' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E");
+  animation: snow 12s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 50px 300px;
+  }
+}
+
+.clouds-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeat-x;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='400' viewBox='0 0 1200 400'%3E%3Cpath d='M200 200 a 60 60 0 0 1 120 0 a 70 70 0 0 1 140 0 a 60 60 0 0 1 120 0 z M800 250 a 50 50 0 0 1 100 0 a 60 60 0 0 1 120 0 a 50 50 0 0 1 100 0 z' fill='%23ffffff' fill-opacity='0.035'/%3E%3C/svg%3E");
+  animation: clouds 90s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes clouds {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 1200px 0px;
+  }
+}
+
+.stars-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='15' cy='15' r='1.2' fill='%23ffffff' fill-opacity='0.3'/%3E%3Ccircle cx='50' cy='35' r='0.8' fill='%23ffffff' fill-opacity='0.2'/%3E%3Ccircle cx='30' cy='65' r='1' fill='%23ffffff' fill-opacity='0.25'/%3E%3C/svg%3E");
+  animation: stars 8s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+/* Glassmorphism loading animations */
+.skeleton-pulse {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.12) 37%,
+    rgba(255, 255, 255, 0.05) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+.dark .skeleton-pulse {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.15) 25%,
+    rgba(15, 23, 42, 0.3) 37%,
+    rgba(15, 23, 42, 0.15) 63%
+  );
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
