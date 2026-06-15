@@ -54,7 +54,7 @@ Built with premium SaaS aesthetics in mind, it features custom ambient gradients
  
 ![Dashboard](./assets/dashweather.png)
 
-### Forecast and analystic
+### Forecast and Analytics
 
 ![Analytics](./assets/fa.png)
 
