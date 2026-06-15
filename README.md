@@ -51,35 +51,12 @@ Built with premium SaaS aesthetics in mind, it features custom ambient gradients
 ## 📸 Screenshots
 
 ### 🖥️ Dashboard View
-```
-+-----------------------------------------------------------------------------+
-|  [Logo] Skyline Weather           [ Search City (London)... ]    [⚙️] [🌗]   |
-+-----------------------------------------------------------------------------+
-|  +---------------------------+  +-----------------------------------------+ |
-|  | London, UK                |  | Wind Status | Humidity    | UV Index    | |
-|  | 16°C       [ Animated SVG] |  | 14 km/h WSW | 78% Comfort | 3 Moderate  | |
-|  | Cloudy     [ Cloud Icon  ] |  +-------------+-------------+-------------+ |
-|  |                           |  | Air Pressure| Visibility  | Astronomy   | |
-|  | Feels Like: 15°C          |  | 1012 hPa    | 10 km       | Sun: 4:43am | |
-|  +---------------------------+  +-----------------------------------------+ |
-|  +---------------------------+  +-----------------------------------------+ |
-|  | 7-Day Forecast            |  | Hourly Forecast (Next 24 Hours)         | |
-|  | Today  Cloud  12° [===] 22|  | Now 1pm 2pm 3pm 4pm 5pm 6pm 7pm 8pm     | |
-|  | Mon    Rain   10° [=  ] 16|  | 16° 18° 20° 20° 19° 17° 15° 14° 13°     | |
-|  | Tue    Sun    14° [ ==] 24|  +-----------------------------------------+ |
-|  +---------------------------+  | Weather Analytics                       | |
-|                                 | [Area Chart Temp Trends]                | |
-|                                 +-----------------------------------------+ |
-+-----------------------------------------------------------------------------+
-```
+ 
+![Dashboard](./assets/dashweather.png)
 
-*Placeholders for media preview:*
-- **Dashboard View**: `[docs/assets/dashboard_desktop.png]`
-- **Forecast View**: `[docs/assets/forecast_cards.png]`
-- **Analytics View**: `[docs/assets/analytics_charts.png]`
-- **Mobile View**: `[docs/assets/dashboard_mobile.png]`
+### Forecast and analystic
 
----
+![Analytics](./assets/forecastanalystic.png)
 
 ## 🛠️ Technology Stack
 
