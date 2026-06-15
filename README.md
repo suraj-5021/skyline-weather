@@ -56,7 +56,7 @@ Built with premium SaaS aesthetics in mind, it features custom ambient gradients
 
 ### Forecast and analystic
 
-![Analytics](./assets/forecastanalystic.png)
+![Analytics](./assets/fa.png)
 
 ## 🛠️ Technology Stack
 
